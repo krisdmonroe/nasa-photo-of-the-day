@@ -1,5 +1,14 @@
+*{
+  background-color: slategrey;
+}
 .App {
+  display: flex;
   text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
 }
 
 .App-logo {
@@ -19,10 +28,39 @@
   color: white;
 }
 
+h1{
+  margin-right: 20%;
+  background-color: rgb(51, 47, 47);
+}
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  background-color: rgb(51, 47, 47);
+  color: white;
+  text-decoration: none;
+  align-items:baseline;
+  width:100%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
 .App-link {
   color: #61dafb;
 }
-
+.img-Uni{
+  width: 50%;
+  box-sizing: border-box;
+}
+.astro-list{
+  display: flex;
+  width:95%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 2% auto;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DataCard from "./Display";
 import "../App.css"
+
 export default function DataList(){
   const [astro, setData] = useState([]);
 
@@ -19,7 +20,7 @@ useEffect(() => {
 
 
   return (
-    <div className="Astro">
+    <div>
         <DataCard
           key={astro.id}
           imgUrl={astro.url}
@@ -27,7 +28,7 @@ useEffect(() => {
           explanation={astro.explanation}
           date={astro.date}
         />
-    </div>
+        </div>
   );
 }
 
